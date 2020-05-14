@@ -3,7 +3,7 @@ package users_db
 import (
 	"database/sql"
 	"fmt"
-	"github.com/Nicrii/Project/users-api/configuration"
+	"github.com/Nicrii/Project/users-api/domain/configuration"
 	_ "github.com/lib/pq"
 )
 

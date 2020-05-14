@@ -5,16 +5,6 @@ import (
 	"os"
 )
 
-type Configuration struct {
-	Postgres struct {
-		Host     string
-		Port     string
-		User     string
-		Password string
-		Dbname   string
-	}
-}
-
 func (config *Configuration) ReadConfiguration() error {
 	file, err := os.Open("./users-api/config.json")
 	if err != nil {
